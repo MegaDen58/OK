@@ -9,7 +9,7 @@ interface Product{
 }
 
 interface User{
-    void displayEmail(String login);
+    void displayEmail(String email);
     void displayNickname(String nick);
     void displayPassword(String password);
 }
@@ -29,7 +29,7 @@ class Review implements User{
     public void displayNickname(String nick){
         System.out.printf("Никнейм: %s", nick);
     }
-    public void makeReview(String login, String review, String nameOfProduct){
+    public void makeReview(String nick, String review, String nameOfProduct){
         System.out.printf("Отзыв пользователя %s о товаре %s.\n %s.", login, nameOfProduct, review);
     }
 }
