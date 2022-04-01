@@ -152,54 +152,34 @@ class Cheque implements User, Product{
 public class Main {
 
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        System.out.print("Введите название товара (IPhone, Xiaomi, Tesla Phone): ");
-        String name = in.nextLine();
-        System.out.print("Введите электронную почту: ");
-        String email = in.nextLine();
-        System.out.print("Введите никнейм от аккаунта: ");
-        String nick = in.nextLine();
-        System.out.print("Введите пароль от аккаунта: ");
-        String password = in.nextLine();
 
         IPhone iphone = new IPhone();
         Xiaomi xiaomi = new Xiaomi();
         Tesla tesla = new Tesla();
-        Review review = new Review();
-        History history = new History();
-        Deposit address = new Deposit();
         Cheque cheque = new Cheque();
 
-        if("IPhone".equals(name)){
             System.out.println("\tЧЕК");
-            cheque.displayEmail(email);
-            cheque.displayNickname(nick);
-            cheque.displayPassword(password);
+            cheque.displayEmail("gegerg@rambler.ru");
+            cheque.displayNickname("Dima");
+            cheque.displayPassword("dima64penza58");
             cheque.displayPhoneModel(iphone.model);
             cheque.displayPrice(iphone.price);
             cheque.displayRating(iphone.rating);
-        }
-        else if("Xiaomi".equals(name)){
+
             System.out.println("\tЧЕК");
-            cheque.displayEmail(email);
-            cheque.displayNickname(nick);
-            cheque.displayPassword(password);
+            cheque.displayEmail("megann51@yandex.ru");
+            cheque.displayNickname("Dimon");
+            cheque.displayPassword("gerhgb34egf");
             cheque.displayPhoneModel(xiaomi.model);
             cheque.displayPrice(xiaomi.price);
             cheque.displayRating(xiaomi.rating);
 
-        }
-        else if("Tesla Phone".equals(name)){
             System.out.println("\tЧЕК");
-            cheque.displayEmail(email);
-            cheque.displayNickname(nick);
-            cheque.displayPassword(password);
+            cheque.displayEmail("wer32of@gmail.com");
+            cheque.displayNickname("Jor1k");
+            cheque.displayPassword("fhberhb534g");
             cheque.displayPhoneModel(tesla.model);
             cheque.displayPrice(tesla.price);
             cheque.displayRating(tesla.rating);
-        }
-        else{
-            System.out.println("Error");
-        }
     }
 }
