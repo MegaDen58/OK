@@ -1,6 +1,7 @@
 package com.company;
 import java.util.Scanner;
 import java.util.Random;
+import java.util.concurrent.locks.ReadWriteLock;
 
 interface Product{
     void displayPhoneModel(String model);
@@ -156,6 +157,9 @@ public class Main {
         IPhone iphone = new IPhone();
         Xiaomi xiaomi = new Xiaomi();
         Tesla tesla = new Tesla();
+        History history = new History();
+        Deposit deposit = new Deposit();
+        Review review = new Review();
         Cheque cheque = new Cheque();
 
             System.out.println("\tЧЕК");
