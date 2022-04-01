@@ -30,7 +30,7 @@ class Review implements User{
         System.out.printf("Никнейм: %s", nick);
     }
     public void makeReview(String nick, String review, String nameOfProduct){
-        System.out.printf("Отзыв пользователя %s о товаре %s.\n %s.", login, nameOfProduct, review);
+        System.out.printf("Отзыв пользователя %s о товаре %s.\n %s.", nick, nameOfProduct, review);
     }
 }
 
