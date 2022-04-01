@@ -166,20 +166,5 @@ public class Main {
             cheque.displayPrice(iphone.price);
             cheque.displayRating(iphone.rating);
 
-            System.out.println("\tЧЕК");
-            cheque.displayEmail("megann51@yandex.ru");
-            cheque.displayNickname("Dimon");
-            cheque.displayPassword("gerhgb34egf");
-            cheque.displayPhoneModel(xiaomi.model);
-            cheque.displayPrice(xiaomi.price);
-            cheque.displayRating(xiaomi.rating);
-
-            System.out.println("\tЧЕК");
-            cheque.displayEmail("wer32of@gmail.com");
-            cheque.displayNickname("Jor1k");
-            cheque.displayPassword("fhberhb534g");
-            cheque.displayPhoneModel(tesla.model);
-            cheque.displayPrice(tesla.price);
-            cheque.displayRating(tesla.rating);
     }
 }
